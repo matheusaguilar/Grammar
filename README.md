@@ -35,6 +35,32 @@
   * By default empty symbol are represented with "&" and production with "->", both can be changed with some methods, see the 
   <a href="https://github.com/matheusaguilar/Grammar/wiki"> Wiki</a>
   
+  <br> <b>Getting First Set:</b>
+  <br> LinkedList<NonTerminal> nonterminals;
+  <br> nonterminals = grammar.getNonterminals();
+  <br> for(NonTerminal nterm : nonterminals){
+  <br> System.out.print(nterm.getSymbol() + " =");
+  <br> for(Terminal term: nterm.getFirst()){
+  <br> System.out.print(" " + term.getSymbol());
+  <br> }
+  <br> System.out.println("");
+  <br> }
+  
+  <br> <b>Getting Follow Set:</b>
+  <br> LinkedList<NonTerminal> nonterminals;
+  <br> nonterminals = grammar.getNonterminals();
+  <br> for(NonTerminal nterm : nonterminals){
+  <br> System.out.print(nterm.getSymbol() + " =");
+  <br> for(Terminal term: nterm.getFollow()){
+  <br> if (!term.getSymbol().equals(CHAR_REPRESENTATION_EOF)){
+  <br> System.out.print(" " + term.getSymbol());
+  <br> } else{
+  <br> System.out.print(" $");
+  <br> }
+  <br> }
+  <br> System.out.println("");
+  <br> }
+  
 # Docs
 <a href="https://github.com/matheusaguilar/Grammar/wiki"><h3>Documentation</h3></a>.
   
