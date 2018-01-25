@@ -7,11 +7,11 @@
   
   <br><b>Example:</b>
   <br>
-  <br>String text_grammar = 
-  <br>"S -> ( A ) | &
-  <br>A -> T E
-  <br>E -> x T E | &
-  <br>T -> ( A ) | a | bb | ccc";
+ <br>String text_grammar = 
+ <br>           "S -> ( A ) | &\n" + 
+ <br>           "A -> T E\n" +
+ <br>           "E -> x T E | &\n" + 
+ <br>           "T -> ( A ) | a | bb | ccc";
   
   <br>Grammar grammar = new Grammar(text_grammar);
   <br>grammar.calculate();
