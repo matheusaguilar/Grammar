@@ -24,7 +24,7 @@
   <a href="https://github.com/matheusaguilar/Grammar/wiki"> Wiki</a>
   
 # Docs
-<a href="https://github.com/matheusaguilar/Grammar/wiki"> <h3>Documentation</h3></a>.
+<a href="https://github.com/matheusaguilar/Grammar/wiki"><h3>Documentation</h3></a>.
   
 # Future development
 * Optimize the code
