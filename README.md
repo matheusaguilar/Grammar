@@ -18,9 +18,10 @@
   
   <br> <b>Note:</b>
   <br>
-  <br>Spaces are very important, because the program try know every symbol, using them.
-  <br> By default empty symbol are represented with "&" and production with "->", both can be changed with some methods, see the 
-  <a href="https://github.com/matheusaguilar/Grammar/wiki"> Wiki</a>.
+  * Spaces " " are very important, because the program try know every symbol, using them
+  * "\n" are used to separate productions
+  * By default empty symbol are represented with "&" and production with "->", both can be changed with some methods, see the 
+  <a href="https://github.com/matheusaguilar/Grammar/wiki"> Wiki</a>
   
 # Docs
 <a href="https://github.com/matheusaguilar/Grammar/wiki"> <h3>Documentation</h3></a>.
