@@ -7,14 +7,26 @@
   
   <br><b>Example:</b>
   <br>
- <br>String text_grammar = 
- <br>           "S -> ( A ) | &\n" + 
- <br>           "A -> T E\n" +
- <br>           "E -> x T E | &\n" + 
- <br>           "T -> ( A ) | a | bb | ccc";
-  
-  <br>Grammar grammar = new Grammar(text_grammar);
-  <br>grammar.calculate();
+<br>String text_grammar = 
+<br>            "S -> ( A ) | &\n" + 
+<br>            "A -> T E\n" +
+<br>            "E -> x T E | &\n" + 
+<br>            "T -> ( A ) | a | bb | ccc";
+        
+<br>        try{
+<br>            Grammar grammar = new Grammar(text_grammar);
+<br>            grammar.calculate();
+            
+ <br>           //Generated content:
+ <br>           grammar.printNonTerminals();
+ <br>           grammar.printTerminals();
+ <br>           grammar.printProductions();
+ <br>           grammar.printFirst();
+ <br>           grammar.printFollow();
+            
+ <br>       } catch (InputMismatchException ex){
+ <br>           System.out.println(ex.getMessage());
+ <br>       }
   
   <br> <b>Note:</b>
   <br>
