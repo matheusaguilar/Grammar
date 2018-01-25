@@ -47,7 +47,7 @@
   <br> }
   
   <br> <b>Getting Follow Set:</b>
-  <br> LinkedList<NonTerminal> nonterminals;
+  <br> LinkedList<<NonTerminal>> nonterminals;
   <br> nonterminals = grammar.getNonterminals();
   <br> for(NonTerminal nterm : nonterminals){
   <br> System.out.print(nterm.getSymbol() + " =");
