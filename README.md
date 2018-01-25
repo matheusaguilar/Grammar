@@ -52,7 +52,7 @@
   <br> for(NonTerminal nterm : nonterminals){
   <br> System.out.print(nterm.getSymbol() + " =");
   <br> for(Terminal term: nterm.getFollow()){
-  <br> if (!term.getSymbol().equals(CHAR_REPRESENTATION_EOF)){
+  <br> if (!term.getSymbol().equals(Grammar.CHAR_REPRESENTATION_EOF)){
   <br> System.out.print(" " + term.getSymbol());
   <br> } else{
   <br> System.out.print(" $");
