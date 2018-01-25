@@ -35,6 +35,9 @@
   * By default empty symbol are represented with "&" and production with "->", both can be changed with some methods, see the 
   <a href="https://github.com/matheusaguilar/Grammar/wiki"> Wiki</a>
   
+  <br><br> <b>First and Follow Set:</b>
+  <br>
+  
   <br> <b>Getting First Set:</b>
   <br> LinkedList nonterminals;
   <br> nonterminals = grammar.getNonterminals();
