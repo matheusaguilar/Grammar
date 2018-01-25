@@ -36,7 +36,7 @@
   <a href="https://github.com/matheusaguilar/Grammar/wiki"> Wiki</a>
   
   <br> <b>Getting First Set:</b>
-  <br> LinkedList<NonTerminal> nonterminals;
+  <br> LinkedList nonterminals;
   <br> nonterminals = grammar.getNonterminals();
   <br> for(NonTerminal nterm : nonterminals){
   <br> System.out.print(nterm.getSymbol() + " =");
@@ -47,7 +47,7 @@
   <br> }
   
   <br> <b>Getting Follow Set:</b>
-  <br> LinkedList<<NonTerminal>> nonterminals;
+  <br> LinkedList nonterminals;
   <br> nonterminals = grammar.getNonterminals();
   <br> for(NonTerminal nterm : nonterminals){
   <br> System.out.print(nterm.getSymbol() + " =");
