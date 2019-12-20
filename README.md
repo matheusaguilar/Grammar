@@ -1,5 +1,5 @@
 # Grammar
-  This is an API developed in Java that receives a grammar(String) and will give to you the terminals, non terminals, productions of the grammar, first and follow set.
+  This is an library developed in Java that receives a grammar(String) and will give to you the terminals, non terminals, productions of the grammar, first and follow set.
 
 # Getting started
   To work with this API, u just create an object of type Grammar and put a String in his constructor that follow this template:
