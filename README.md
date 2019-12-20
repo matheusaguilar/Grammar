@@ -42,23 +42,26 @@ String text_grammar =
   
   <br> <b>Getting First Set:</b>
   ```java
-   LinkedList nonterminals;
-   nonterminals = grammar.getNonterminals();
+   LinkedList nonterminals = grammar.getNonterminals();
+   
    for(NonTerminal nterm : nonterminals){
     System.out.print(nterm.getSymbol() + " =");
+    
     for(Terminal term: nterm.getFirst()){
       System.out.print(" " + term.getSymbol());
     }
+    
     System.out.println("");
    }
    ```
   
   <br> <b>Getting Follow Set:</b>
   ```java
-   LinkedList nonterminals;
-   nonterminals = grammar.getNonterminals();
+   LinkedList nonterminals = grammar.getNonterminals();
+   
    for(NonTerminal nterm : nonterminals){
     System.out.print(nterm.getSymbol() + " =");
+    
     for(Terminal term: nterm.getFollow()){
       if (!term.getSymbol().equals(Grammar.CHAR_REPRESENTATION_EOF)){
         System.out.print(" " + term.getSymbol());
@@ -66,6 +69,7 @@ String text_grammar =
         System.out.print(" $");
       }
     }
+    
     System.out.println("");
    }
    ```
