@@ -7,26 +7,28 @@
   
   <br><b>Example:</b>
   <br>
-<br>String text_grammar = 
-<br>            "S -> ( A ) | &\n" + 
-<br>            "A -> T E\n" +
-<br>            "E -> x T E | &\n" + 
-<br>            "T -> ( A ) | a | bb | ccc";
+  ```java
+String text_grammar = 
+            "S -> ( A ) | &\n" + 
+            "A -> T E\n" +
+            "E -> x T E | &\n" + 
+            "T -> ( A ) | a | bb | ccc";
         
-<br>        try{
-<br>            Grammar grammar = new Grammar(text_grammar);
-<br>            grammar.calculate();
+        try{
+            Grammar grammar = new Grammar(text_grammar);
+            grammar.calculate();
             
- <br>           //Generated content:
- <br>           grammar.printNonTerminals();
- <br>           grammar.printTerminals();
- <br>           grammar.printProductions();
- <br>           grammar.printFirst();
- <br>           grammar.printFollow();
+            //Generated content:
+            grammar.printNonTerminals();
+            grammar.printTerminals();
+            grammar.printProductions();
+            grammar.printFirst();
+            grammar.printFollow();
             
- <br>       } catch (InputMismatchException ex){
- <br>           System.out.println(ex.getMessage());
- <br>       }
+        } catch (InputMismatchException ex){
+            System.out.println(ex.getMessage());
+        }
+  ```
   
   <br> <b>Note:</b>
   <br>
@@ -39,30 +41,34 @@
   <br>
   
   <br> <b>Getting First Set:</b>
-  <br> LinkedList nonterminals;
-  <br> nonterminals = grammar.getNonterminals();
-  <br> for(NonTerminal nterm : nonterminals){
-  <br> System.out.print(nterm.getSymbol() + " =");
-  <br> for(Terminal term: nterm.getFirst()){
-  <br> System.out.print(" " + term.getSymbol());
-  <br> }
-  <br> System.out.println("");
-  <br> }
+  ```java
+   LinkedList nonterminals;
+   nonterminals = grammar.getNonterminals();
+   for(NonTerminal nterm : nonterminals){
+    System.out.print(nterm.getSymbol() + " =");
+    for(Terminal term: nterm.getFirst()){
+      System.out.print(" " + term.getSymbol());
+    }
+    System.out.println("");
+   }
+   ```
   
   <br> <b>Getting Follow Set:</b>
-  <br> LinkedList nonterminals;
-  <br> nonterminals = grammar.getNonterminals();
-  <br> for(NonTerminal nterm : nonterminals){
-  <br> System.out.print(nterm.getSymbol() + " =");
-  <br> for(Terminal term: nterm.getFollow()){
-  <br> if (!term.getSymbol().equals(Grammar.CHAR_REPRESENTATION_EOF)){
-  <br> System.out.print(" " + term.getSymbol());
-  <br> } else{
-  <br> System.out.print(" $");
-  <br> }
-  <br> }
-  <br> System.out.println("");
-  <br> }
+  ```java
+   LinkedList nonterminals;
+   nonterminals = grammar.getNonterminals();
+   for(NonTerminal nterm : nonterminals){
+    System.out.print(nterm.getSymbol() + " =");
+    for(Terminal term: nterm.getFollow()){
+      if (!term.getSymbol().equals(Grammar.CHAR_REPRESENTATION_EOF)){
+        System.out.print(" " + term.getSymbol());
+      } else{
+        System.out.print(" $");
+      }
+    }
+    System.out.println("");
+   }
+   ```
   
 # Docs
 <a href="https://github.com/matheusaguilar/Grammar/wiki"><h3>Documentation</h3></a>.
